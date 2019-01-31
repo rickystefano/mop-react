@@ -1,0 +1,92 @@
+.works-item-container {
+  display: inline-block;
+  height: 50%;
+  margin: 20px 20px;
+  width: calc((100% - 200px) / 4);
+  height: auto;
+  min-width: 350px;
+  position: relative;
+  vertical-align: top;
+}
+
+.works-item-container:hover {
+  cursor: pointer;
+}
+
+.works-item-container:hover .animation:before,
+.works-item-container:hover .animation:after {
+  left: 1px;
+  top: 0;
+}
+
+.works-item-container .animation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px;
+  height: 90px;
+  z-index: 120;
+  border-radius: 0 8px 0 8px;
+  overflow: hidden;
+}
+
+.works-item-container .animation:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(182, 182, 182);
+  top: -50px;
+  left: 100%;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  transition: 0.15s linear;
+}
+
+.works-item-container .animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(120, 120, 120);
+  top: -50px;
+  left: 100%;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  transition: 0.15s linear;
+}
+
+.works-item-container:after {
+  border-radius: 10px;
+  border: solid 2px rgb(102, 102, 102);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.works-item-container figure {
+  width: 100%;
+  height: 185.08px;
+  overflow: hidden;
+}
+
+.works-item-container figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.works-item-container .works-text-wrapper {
+  width: 100%;
+  background: rgb(102, 102, 102);
+  height: 200px;
+  border-radius: 0 0 8px 8px;
+  padding: 10px 5px;
+  font-size: 1.4em;
+  color: white;
+}
+
+.works-item-container .works-text-wrapper h3 {
+  margin-bottom: 9px;
+}

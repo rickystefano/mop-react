@@ -1,0 +1,95 @@
+.form-title {
+  animation: fadeIn 1s ease-out;
+  margin: 0 0 50px 0;
+  padding-top: 13px;
+  font-size: 40px;
+}
+
+form .form-container {
+  margin-bottom: 15px;
+}
+
+form .form-wrapper {
+  animation: fadeIn 1s ease-out;
+  padding: 10px 15px;
+  min-width: 550px;
+  border-bottom: 2px solid rgb(102, 102, 102);
+  display: inline-block;
+}
+
+form .form-wrapper label {
+  margin-right: 50px;
+  font-size: 28px;
+  line-height: 30px;
+  float: left;
+  font-weight: bold;
+}
+
+form .form-wrapper input,
+form .form-wrapper textarea {
+  font-family: "body";
+  font-size: 28px;
+  border: none;
+}
+
+form .form-wrapper.small input.small {
+  height: 30px;
+  vertical-align: top;
+  width: 380px;
+  float: right;
+}
+
+form .form-wrapper input:focus,
+form .form-wrapper textarea:focus {
+  outline: none;
+}
+form .form-wrapper.big label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+form .form-wrapper.big textarea {
+  width: 100%;
+}
+
+form input[type="submit"] {
+  width: 550px;
+  font-size: 35px;
+  font-family: "body";
+  background: rgb(102, 102, 102);
+  border: none;
+  color: white;
+  padding: 10px 0;
+  transition: ease-in 150ms;
+}
+
+form input[type="submit"]:hover {
+  background: rgb(71, 71, 71);
+}
+
+.social {
+  width: 550px;
+  margin: 50px auto 0 auto;
+}
+
+.social .social-items {
+  width: calc(550px / 5);
+  height: calc(550px / 5);
+  float: left;
+  position: relative;
+}
+
+.social .social-items img {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 130ms ease-out;
+}
+
+.social .social-items:hover img {
+  width: 100%;
+}
